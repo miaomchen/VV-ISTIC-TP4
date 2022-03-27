@@ -91,6 +91,7 @@ public class Sorting {
             temp[k++] = array[j++];
         }
 
+        // bug temp.length-1 was found by the test, corrected by temp.length
         // cover the original array by the new array
         for (int k2 = 0; k2 < temp.length; k2++) {
             array[k2 + low] = temp[k2];
